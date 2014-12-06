@@ -1,0 +1,300 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type"
+content="text/html; charset=iso-8859-1">
+<meta name="GENERATOR" content="Microsoft FrontPage Express 2.0">
+<title>center2</title>
+</head>
+
+<body bgcolor="#000000" text="#FFFF99" link="#FFFF00"
+vlink="#FFCC33" alink="#FFFF00" onload="update_anchors()">
+<script language="JavaScript">
+<!--
+function update_anchors( )
+{
+	c = top.center.document;
+	a = top.anchors.document;
+	a.clear();
+	a.open();
+	a.write("<HTML>");
+	a.write("<HEAD>");
+	a.write("<TITLE>anchors</TITLE>");
+	a.write("<BASE TARGET=\"center\">");
+	a.write("</HEAD>");
+	a.write("<BODY TEXT=\"#FCFC04\" BGCOLOR=\"#000000\" LINK=\"#FCFC04\" VLINK=\"#FCFC04\" ALINK=\"#FCFC04\">");
+	if( c.anchors )
+	{
+		nAnchors = c.anchors.length;
+		if( nAnchors > 0 )
+		{
+			pos = document.URL.lastIndexOf( "/" );
+			filename = document.URL.substring( pos + 1,  document.URL.length );
+			pos = filename.indexOf( "#" );
+			if( pos > 0 )
+			{
+				filename = filename.substring( 0, pos );
+			}
+			i = 0;
+			while( i < nAnchors )
+			{
+				a.write( "  " + 
+				"<FONT FACE=\"Courier New,Courier\"><FONT SIZE=-1><A HREF=" + 
+				filename  + "#" + c.anchors[ i ].name + ">" + 
+				c.anchors[ i ].name + "</A></FONT></FONT><BR>" );
+				i++;
+			}
+		}
+	}
+	a.write("</BODY>");
+	a.write("</HTML>");
+	a.close();
+}
+
+//-->
+
+</script>
+
+<table border="0" width="100%">
+    <tr>
+        <td><h1 align="center"><font face="Comic Sans MS"><u>Projects</u></font></h1>
+        <h2><a name="RemoteAirplane"><font face="Comic Sans MS">Remote
+        Airplane 1998</font></a></h2>
+        <p><font face="Arial">In the winter of 98 a few of my
+        friends and I were pondering the idea of flying remote
+        controlled airplanes in the summer.&nbsp; I found simple
+        plan designs on the web and started building my own plane
+        without using a kit from the hobby shop.&nbsp; I later
+        learned that the wing I had made was for acrobatic
+        airplanes and that it would be very difficult to fly for
+        a beginner.&nbsp; So I never dared to try and fly it and
+        got a pre-built plane from the hobby shop so that I could
+        learn how to fly RC planes first. Maybe one day when
+        I&#146;m a little better at it I will attempt to fly my
+        custom made airplane. Whish me luck!</font> </p>
+        <h2><a name="Clue"><font face="Comic Sans MS">Clue 1996</font></a></h2>
+        <p><font face="Arial">Back in University I had a Software
+        Engineering course. Essentially this course was about
+        design and implementing our own software project. We
+        deceived to make a game of Clue.&nbsp; We had to use a
+        CASE tool to assist us in the planning/development. We
+        chose Rational Rose since it was about the only tool that
+        could generate the C++ code for the class diagrams and
+        re-generate without whipping out any implemented methods.
+        CASE tools require a lot of discipline to keep up to date
+        but it was nice to have a diagram that really reflects
+        the actual implementation at the end of the
+        project.&nbsp; </font><a
+        href="downloads.html#Clue"><font face="Arial">Download
+        the Clue Game.</font></a> </p>
+        <h2><a name="Tock"><font face="Comic Sans MS">Tock 1994</font></a></h2>
+        <p><font face="Arial">After the microsouris project and
+        two work terms in software I was getting more and more
+        interested in software.&nbsp;&nbsp; I especially liked
+        the no material required and pure creative aspect of
+        it.&nbsp; Object oriented programming was new to me at
+        the time and I decided after my C++ University course to
+        make a game using OOP technique.&nbsp; At first I was not
+        convinced of it's virtues and found that it complicated
+        things for nothing.&nbsp; I did not see the advantage of
+        data decomposition over procedural decomposition.&nbsp;
+        But after many complete rewrites of my game I came to
+        appreciate the object paradigm.
+		&nbsp; </font><a
+        href="downloads.html#Tock"><font face="Arial">Download
+        the Tock Game.</font></a> </p>
+		
+        <h2><a name="Microsouris"><font face="Comic Sans MS">Microsouris
+        1993</font></a></h2>
+        <p><font face="Arial">At the University of Sherbrooke I
+        joined an extra curricular project named
+        microsouris.&nbsp; Microsouris is a yearly contest held
+        in Universities all over the world.&nbsp; A 16x16 cell
+        maze is built by the organization committee using 6
+        inches tall walls.&nbsp; Students build self reliant
+        robots (mouse) capable of detecting the walls of the maze
+        and deciding where to go.&nbsp; The goal is to find the
+        middle of the maze as quickly has possible.&nbsp; Our
+        group consisted of 4 teams: mechanical, sensors, hardware
+        and software.&nbsp; I was in the software group.&nbsp;
+        The goal for us was to come up with an efficient
+        algorithm that would minimize the robots
+        displacements.&nbsp; The only input we had was the
+        presence or absence on either sides of the
+        robot.&nbsp;The best was to understand the algorithm I
+        implemented is to imagine the mouse holding a rope that
+        it ties to the entrance of the maze. When the mouse
+        reaches a dead end it pulls back on the rope to come back
+        and marks the cells with an X indicating those cells do
+        not lead to the center of the maze.&nbsp; The rope is
+        also used to discard entire surfaces. If the rope and
+        outer wall enclose a surface that does not contain the
+        center cells then it concludes that the enclosed cells
+        are not part of the solution and marks them all with X.</font>
+        &nbsp; </font><a
+        href="downloads.html#Microsouris"><font face="Arial">Download
+        the Microsouris Screensaver.</font></a> 
+		</p>
+        <h2><a name="PlasmaJar"><font face="Comic Sans MS">Plasma
+        Jar 1990</font></a></h2>
+        <p><img src="images/power.gif" align="right" hspace="5"
+        width="155" height="293" nosave> <img
+        src="images/plasma.gif" align="right" hspace="5"
+        width="171" height="210" nosave> </p>
+        <p><font face="Arial">Plasma is the fourth state of
+        matter the first tree are solid, liquid and
+        gas.&nbsp;Nowdays plasma balls are readily available you
+        might have seen some in hobby shops. Back then I was
+        fascinated by them.&nbsp; I bought a book describing how
+        to build one.&nbsp; It consisted of a cookie jar and a
+        high voltage power supply.&nbsp; The power supply used a
+        modified old TV fly-back transformer and 2 power bi-polar
+        transistor.&nbsp; It produced 30000 Volts.&nbsp; The
+        cookie jar needed to be ceiled with epoxy and a valve had
+        to be put in on the cap so that air could be sucked out
+        and the valve closed after.&nbsp; I asked a science
+        teacher at my high school if he could use the school's
+        vacuum pump to depressurize my cookie jar.&nbsp; Once
+        that was done all that I needed to do was to connect my
+        power supply to it.&nbsp; This was one of the most
+        interesting projects to play around with.&nbsp; Thanks to
+        my 30kV power supply I also made a Jackob&#146;s ladder
+        and experimented with other high voltage
+        experiments.&nbsp; I did get electrocuted a few
+        times.&nbsp; Luckily my power supply did not produce more
+        than a few milliamps.</font> </p>
+        <h2><a name="TimerII"><font face="Comic Sans MS">Timer II
+        1989</font></a></h2>
+        <p><img src="images/timerfr.gif" align="right" hspace="5"
+        width="288" height="92" nosave> </p>
+        <p><font face="Arial">After seeing some very nice rack
+        mount metal cases in the Mark V Electronics Catalog I
+        decided I would create a new Timer with a more sober
+        front panel.&nbsp; I decided to get rid of the
+        clapper.&nbsp; I also put my TV descrambler in the
+        box.&nbsp; Instead of controlling only one appliance it
+        would be able to control 6.&nbsp; The relays were
+        replaced by opto-electric isolators and power SCR
+        semi-conductors.&nbsp; This isolated the AC circuitry and
+        the digital 5VDC circuits.&nbsp; Instead of the ugly
+        silver switches used before the front panel would have
+        discrete Schmitt trigger buttons.&nbsp; Schmitt triggers
+        are those cool little plates on alarms clocks that detect
+        the slightness touch.&nbsp; Pushing them would change the
+        state of the outlets from on, off and timed.&nbsp; I also
+        added a cable interface because I taught it would be nice
+        to have the timer remote controlled.&nbsp; I could build
+        a remote control receiver at a latter date and plug it to
+        my timer trough this simple cable interface.</font> </p>
+        <h2><a name="TimerI"><font face="Comic Sans MS">Timer I
+        1988</font></a></h2>
+        <p><font face="Arial">In the summer of 88 I was visiting
+        my mom who lived in Gatineau where the heat and humidity
+        is unbearable especially in July and August. We did not
+        have air conditioning but I did have a fan in my
+        room.&nbsp; I did not want to keep the fan going all
+        night because it eventually got cold in the middle of the
+        night so I taught it would be nice to make some king of
+        timer to stop the fan after I was a sleep and start it
+        again before I got up.&nbsp; To do this I used an old
+        alarm clock and hooked a driver circuit to the alarm
+        signal.&nbsp; The driver would activate a relay an turn
+        on the fan.&nbsp; I thought it would also be nice if I
+        could turn on/off the fan using a clapper device like the
+        one on TV.&nbsp; I put those two projects in a nice black
+        metal bock.&nbsp; The front panel had some flashing leds
+        and some silver switches.&nbsp; Unfortunately I don't
+        have any pictures of it.</font> </p>
+        <h2><a name="Half-PipeRamp"><font face="Comic Sans MS">Skateboard
+        Half-Pipe Ramp 1988</font></a></h2>
+        <p><font face="Arial">In the summer of 88 my friends and
+        I wrote a letter to the city of Campbellton New Brunswick
+        requesting a skate park for the skateboarders of our town
+        but it was turned down so we decided we would build our
+        own half pipe ramp.&nbsp; After a few weeks of research
+        on how to build a ramp, I drew up a plan for our own
+        ramp.&nbsp; We bought 8x4 sheets of 1/4'' plywood and
+        some 2x4s and we proceeded to put together our dream ramp
+        in my dad&#146;s back yard.&nbsp; The ramp we built was
+        8' high and 8' wide.&nbsp; It was pretty big.&nbsp; Since
+        we did not have the fancy skateboard gear we would wore
+        our hockey helmets, kneepads, elbowpads and hockey
+        pants.&nbsp; We were not the most fashionable skaters in
+        town but that did not matter because we were not in it
+        for the looks anyways. We wanted to get some air, we were
+        fixated on rising 8 feet above the ramp like Tony Hawk.
+        Unfortunately I don't have any pictures of the finished
+        8&#146; ramp.</font> </p>
+        <h2><a name="RemoteBoat"><font face="Comic Sans MS">Remote
+        Boat 1987</font></a></h2>
+        <p><font face="Arial">Initially I wanted to build a
+        racing speedboat but I did not have the special
+        water-cooled engine required to build it.&nbsp; So
+        wanting to use the airplane engine that I had I designed
+        a hovercraft boat except I put the engine in the front of
+        the boat.&nbsp; This was necessary since airplane engines
+        need the wind produced by propeller to cool them
+        off.&nbsp;</font> </p>
+        <h2><a name="TVDescrambler"><font face="Comic Sans MS">TV
+        Descrambler 1987</font></a></h2>
+        <p><font face="Arial">At 14 I read an article in Radio
+        Electronics magazine.&nbsp; It was about Gated-Synch
+        descramblers.&nbsp; The article descried how the cable
+        company scrambles TV channels.&nbsp; It is accomplished
+        by applying 6-db suppression to the video signal's
+        horizontal sync pulses thereby making it impossible for a
+        TV set to maintain a synchronized picture on the
+        screen.&nbsp; The descramblers from the cable company use
+        some kind of reference signal that is either multiplexed
+        onto the audio carrier or onto some kind of out band
+        carrier on an empty channel.&nbsp; Since pirate
+        descramblers sold on the black market use this secret
+        reference they need to be changed each time the cable
+        company decides to change the reference.&nbsp; The
+        descrambler in the magazine eliminated the need for this
+        hidden reference signal so it did not matter where the
+        scrambling system would hide the reference.&nbsp; So I
+        decided to try an make this project.&nbsp; The
+        descrambler had many adjustments the magazine suggested
+        using an oscilloscope to tune it properly.&nbsp; But they
+        also had an elaborate explanation for people without an
+        oscilloscope.&nbsp; So after many hours of fiddling with
+        it I descrambled the First Choice channel for the first
+        time.&nbsp; That was pretty gratifying.</font> <font
+        face="Arial">Today cable companies use a different
+        scrambling technique all together. They adopted a digital
+        scrambling technique that are much harder to crack but
+        still possible.<span style="mso-spacerun: yes">&nbsp; </font></p>
+        <h2><a name="ElectronicBook"><font face="Comic Sans MS">Electronic
+        Book 1986</font></a></h2>
+        <p><font face="Arial">At 13 years old I got interested in
+        learning electronics.&nbsp; My first book was Getting
+        Started in Electronics by Forrest M. Mines III, from
+        Radio Shack.&nbsp; I would not suggest buying anything at
+        Radio Shack except for that book. It&#146;s a pretty good
+        beginner book.&nbsp; With it I learned all about bread
+        boards, relays, resistors, capacitors, transformers,
+        diodes, transistors and digital circuits. Of course once
+        I started my Electrical Engineering bachelor I realized
+        there was a lot I did not know.&nbsp;What is it that they
+        say. The more you learn the more you realize you don't
+        know much.</font></p>
+        <h2><a name="RemoteLegoCar"><font face="Comic Sans MS">Remote
+        Lego Car 1985</font></a></h2>
+        <p><img src="images/lego_car.gif" align="right"
+        hspace="5" width="166" height="116" nosave> </p>
+        <p><font face="Arial">For years I was making lego cars
+        powered by little electric motors using elastic as the
+        drive belt.&nbsp; My friends and I would build these lego
+        cars and we would race them on dirt tracts.&nbsp; At 12 I
+        made a much bigger car using the receiver and servos of
+        my Tamaya Hornet dune buggy.&nbsp; One servo would turn
+        the wheels and the other would activate a switch to power
+        the electric motor.</font> </p>
+        </td>
+        <td>&nbsp;</td>
+        <td width="140">&nbsp;</td>
+    </tr>
+</table>
+</body>
+</html>

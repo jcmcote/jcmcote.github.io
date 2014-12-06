@@ -1,0 +1,242 @@
+<html>
+
+<head>
+<meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<meta NAME="GENERATOR" CONTENT="Microsoft FrontPage 3.0">
+<title>nav</title>
+<base TARGET="center">
+<script language="JavaScript">
+
+<!--
+
+butActiveName = "home"; 
+
+
+
+// Script to preload images and perform mouse-over on toolbar.
+if ( document.images ) {
+
+        home_on = new Image ( 47, 30 );
+
+        home_on.src = "images/home_on.gif";
+
+        proj_on = new Image ( 73, 30 );
+
+        proj_on.src = "images/proj_on.gif";
+
+        resume_on = new Image ( 59, 30 );
+
+        resume_on.src = "images/resume_on.gif";
+
+        kayaking_on = new Image ( 74, 30 );
+
+        kayaking_on.src = "images/kayaking_on.gif";
+
+        euro_on = new Image ( 77, 30 );
+
+        euro_on.src = "images/euro_on.gif";
+
+        code_on = new Image ( 112, 30 );
+
+        code_on.src = "images/code_on.gif";
+
+        downloads_on = new Image ( 86, 30 );
+
+        downloads_on.src = "images/downloads_on.gif";
+
+        home_off = new Image ( 47, 30 );
+
+        home_off.src = "images/home_off.gif";
+
+        proj_off = new Image ( 73, 30 );
+
+        proj_off.src = "images/proj_off.gif";
+
+        resume_off = new Image ( 59,30 );
+
+        resume_off.src = "images/resume_off.gif";
+
+        kayaking_off = new Image ( 74, 30 );
+
+        kayaking_off.src = "images/kayaking_off.gif";
+
+        downloads_off = new Image ( 86, 30 );
+
+        downloads_off.src = "images/downloads_off.gif";
+
+        code_off = new Image ( 112, 30 );
+
+        code_off.src = "images/code_off.gif";
+
+        euro_off = new Image ( 77, 30 );
+
+        euro_off.src = "images/euro_off.gif";
+
+	line1 = new Image( 2, 230 );
+	line2 = new Image( 2, 200 );
+	line3 = new Image( 2, 170 );
+	line4 = new Image( 2, 140 );
+	line5 = new Image( 2, 110 );
+	line6 = new Image( 2, 80 );
+	line7 = new Image( 2, 50 );
+	line1.src = "images/line1.gif";
+	line2.src = "images/line2.gif";
+	line3.src = "images/line3.gif";
+	line4.src = "images/line4.gif";
+	line5.src = "images/line5.gif";
+	line6.src = "images/line6.gif";
+	line7.src = "images/line7.gif";
+}
+
+function get_menu_id( imgName )
+{
+	if( imgName == "home" )
+		return 1;
+	if( imgName == "proj" )
+		return 2;
+	if( imgName == "euro" )
+		return 3;
+	if( imgName == "resume" )
+		return 4;
+	if( imgName == "downloads" )
+		return 5;
+	if( imgName == "kayaking" )
+		return 6;
+	if( imgName == "code" )
+		return 7;
+	else
+		return 1;
+}
+
+function button_on ( imgName )
+
+{
+
+        if ( document.images )
+
+        {
+		// the current button must be changed to off
+                document.images[butActiveName].src = eval ( butActiveName + "_off.src" );
+
+		// this new button must be put on
+                document.images[imgName].src = eval ( imgName + "_on.src" );
+		
+        }
+
+}
+
+
+
+function button_off ( imgName )
+
+{
+
+        if ( document.images )
+
+        {
+                if ( butActiveName != imgName )
+                {
+	                document.images[imgName].src = eval ( imgName + "_off.src" );
+                }
+                
+                document.images[butActiveName].src = eval( butActiveName + "_on.src" );
+
+
+        }
+
+}
+
+function button_click( imgName )
+{
+
+        if ( document.images )
+
+        {
+
+                butOff = eval ( butActiveName + "_off.src" );
+
+                document.images[butActiveName].src = butOff;
+	
+                butActiveName = imgName;
+
+                butOn = eval ( imgName + "_on.src" );
+
+				// change the vertical line to active button
+				document.images["v_line"].src = eval("line" + get_menu_id( butActiveName ) + ".src");
+
+
+                document.images[imgName].src = butOn;
+
+				// Go rid of logo frame so no need to open the page anymore. The href does it now.
+				// window.open( imgName + ".html", 'center' );
+        }
+}
+
+
+
+//-->
+
+</script>
+</head>
+
+<body TEXT="#FFFF99" BGCOLOR="#000000" LINK="#FFFF00" VLINK="#FFCC33" ALINK="#FFFF00">
+<LEFT>
+
+<table COLS="2" cellspacing="0" cellpadding="0" border="0">
+  <tr>
+    <td height="208"><table COLS="1" cellspacing="0" cellpadding="0" border="0">
+      <tr>
+        <td>&nbsp</td>
+      </tr>
+      <tr>
+        <td><a HREF="home.html" onmousedown="button_click('home');" return true
+        onmouseout="button_off('home'); return true" onmouseover="button_on('home'); return true"><img
+        SRC="images/home_on.gif" NAME="home" BORDER="0" width="47" height="30"></a></td>
+      </tr>
+      <tr>
+        <td><a HREF="proj.html" onmousedown="button_click('proj');" return true
+        onmouseout="button_off('proj'); return true" onmouseover="button_on('proj'); return true"><img
+        SRC="images/proj_off.gif" NAME="proj" BORDER="0" width="73" height="30"></a></td>
+      </tr>
+      <tr>
+        <td><a HREF="journal_part1.html" onmousedown="button_click('euro');" return true
+        onmouseout="button_off('euro'); return true" onmouseover="button_on('euro'); return true"><img
+        SRC="images/euro_off.gif" NAME="euro" BORDER="0" width="77" height="30"></a></td>
+      </tr>
+      <tr>
+        <td><a HREF="resume.html" onmousedown="button_click('resume'); return true"
+        onmouseout="button_off('resume'); return true"
+        onmouseover="button_on('resume'); return true"><img SRC="images/resume_off.gif"
+        NAME="resume" BORDER="0" width="59" height="30"></a></td>
+      </tr>
+      <tr>
+        <td><a HREF="downloads.html" onmousedown="button_click('downloads'); return true"
+        onmouseout="button_off('downloads'); return true"
+        onmouseover="button_on('downloads'); return true"><img SRC="images/downloads_off.gif"
+        NAME="downloads" BORDER="0" width="86" height="30"></a></td>
+      </tr>
+      <tr>
+        <td><a HREF="kayaking.html" onmousedown="button_click('kayaking'); return true"
+        onmouseout="button_off('kayaking'); return true"
+        onmouseover="button_on('kayaking'); return true"><img SRC="images/kayaking_off.gif"
+        NAME="kayaking" BORDER="0" width="74" height="30"></a></td>
+      </tr>
+      <tr>
+        <td><a HREF="code.html" onmousedown="button_click('code'); return true"
+        onmouseout="button_off('code'); return true" onmouseover="button_on('code'); return true"><img
+        SRC="images/code_off.gif" NAME="code" BORDER="0" width="112" height="30"></a></td>
+      </tr>
+    </table>
+    </td>
+    <td height="208" valign="bottom"><img SRC="images/line1.gif" NAME="v_line" BORDER="0"
+    </IMG></td>
+  </tr>
+  <tr>
+    <td colspan="2" align="right"><img src="images/submenu.gif" width="124" height="60"
+    alt="submenu.gif (984 bytes)"></td>
+  </tr>
+</table>
+
+<p>&nbsp;</p>
+</body>
+</html>

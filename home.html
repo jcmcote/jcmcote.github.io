@@ -1,0 +1,82 @@
+<html>
+
+<head>
+<meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<meta NAME="GENERATOR" CONTENT="Microsoft FrontPage 3.0">
+<title>center2</title>
+</head>
+
+<BODY  onLoad="update_anchors()" TEXT="#FFFF99" BGCOLOR="#000000" LINK="#FFFF00" VLINK="#FFCC33" ALINK="#FFFF00">
+
+<SCRIPT language="JavaScript">
+
+<!--
+function update_anchors( )
+{
+	c = top.center.document;
+	a = top.anchors.document;
+	a.clear();
+	a.open();
+	a.write("<HTML>");
+	a.write("<HEAD>");
+	a.write("<TITLE>anchors from Home</TITLE>");
+	a.write("<BASE TARGET=\"center\">");
+	a.write("</HEAD>");
+	a.write("<BODY TEXT=\"#FCFC04\" BGCOLOR=\"#000000\" LINK=\"#FCFC04\" VLINK=\"#FCFC04\" ALINK=\"#FCFC04\">");
+	if( c.anchors )
+	{
+		nAnchors = c.anchors.length;
+		if( nAnchors > 0 )
+		{
+			pos = document.URL.lastIndexOf( "/" );
+			filename = document.URL.substring( pos + 1,  document.URL.length );
+			pos = filename.indexOf( "#" );
+			if( pos > 0 )
+			{
+				filename = filename.substring( 0, pos );
+			}
+			i = 0;
+			while( i < nAnchors )
+			{
+				a.write( "&nbsp;&nbsp;" + 
+				"<FONT FACE=\"Courier New,Courier\"><FONT SIZE=-1><A HREF=" + 
+				filename  + "#" + c.anchors[ i ].name + ">" + 
+				c.anchors[ i ].name + "</A></FONT></FONT><BR>" );
+				i++;
+			}
+		}
+	}
+	a.write("</BODY>");
+	a.write("</HTML>");
+	a.close();
+}
+
+//-->
+
+</SCRIPT>
+
+
+<table border="0" width="100%">
+    <tr>
+
+<p align="center">&nbsp; </p>
+<div align="center"><center>
+
+<table BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="90%" HEIGHT="90%">
+  <tr ALIGN="CENTER" VALIGN="CENTER">
+    <td ROWSPAN="3"><img src="images/me_in_my_kayak.jpg" width="432" height="289"
+    alt="me_in_my_kayak.jpg (115631 bytes)" align="center"></td>
+  </tr>
+</table>
+</center></div>
+
+<p>&nbsp; </p>
+
+
+        </td>
+        <td width="140">&nbsp;</td>
+    </tr>
+</table>
+
+</body>
+</html>
